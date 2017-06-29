@@ -1,0 +1,339 @@
+body {
+    font-family: 'Yrsa', serif;
+    font-size: 14px;
+}
+
+nav {
+    font-family: 'Yrsa', serif;
+    font-size: 20px;
+}
+
+.article-heading {
+    font-family: 'Yrsa', sans-serif;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.section-content {
+    font-family: 'Yrsa', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    padding-left: 40px;
+    text-align: left;   
+}
+
+h1.name {
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 42px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p.caption {
+    font-family: 'Yrsa', sans-serif;
+    font-size: 20px;
+    color: #808080;
+    text-align: center;
+}
+
+.company {
+    width: 250px;
+    height: 250px;
+    /*max-width: 300px;*/
+    flex: 1 1 300px;
+    -webkit-flex: 1 1 300px;
+    background: #ffffff;
+    border: 1px solid #E9EBEE;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-bottom: 14px;
+}
+
+/*.card {
+    height: 220px;
+    width: 220px;
+    background: #eee;
+    margin: 0;
+    float: left;
+    border-radius: 3px;
+    margin: 14px;
+    -webkit-transition: all .21 ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.card.hover {
+    background: #222;
+}*/
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-glyphicon {
+    color: #5a5a5a;
+}
+
+footer {
+    background: #111;
+}
+
+.footer-text : {
+    color: #eee;
+}
+/*
+font-family: 'Noto Serif', serif;
+font-family: 'Yrsa', serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Tenali Ramakrishna', sans-serif;
+font-family: 'EB Garamond', serif;
+kiwi-bg-color: #25871c;
+goodera-bg-color: #ff7a49;
+*/
+
+.card {
+  display: block;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border: 1px solid #e3eaec;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #ddd;
+  margin: 10px auto;
+}
+.card .card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  z-index: 1;
+}
+.card .card-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  background-color: #232b34;
+  border: 1px solid #232b34;
+  opacity: 0;
+  z-index: 100;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.card .card-hover .card-hover-header {
+  color: #fff;
+  text-align: left;
+  margin: 9px 13px 0 11px;
+  line-height: 24px;
+  font-size: 14px;
+  position: relative;
+  opacity: 0;
+  -moz-animation: fadeOutUp 0.3s both;
+  -webkit-animation: fadeOutUp 0.3s both;
+  z-index: 10001;
+}
+.card .card-hover .card-hover-main {
+  margin-top: 55px;
+  text-align: center;
+  opacity: 0;
+  -moz-animation: fadeOutDown 0.3s both;
+  -webkit-animation: fadeOutDown 0.3s both;
+}
+.card .card-hover .card-hover-main .btn {
+  width: 82px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #bdbdbd;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+.card:hover .card-content {
+  filter: blur(4px);
+}
+.card:hover .card-hover {
+  opacity: 0.8;
+}
+.card:hover .card-hover .card-hover-header {
+  -moz-animation: fadeInDown 0.3s both;
+  -webkit-animation: fadeInDown 0.3s both;
+}
+.card:hover .card-hover .card-hover-main {
+  -moz-animation: fadeInUp 0.3s both;
+  -webkit-animation: fadeInUp 0.3s both;
+}
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+@-o-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@-o-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

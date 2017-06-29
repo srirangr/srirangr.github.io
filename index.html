@@ -1,14 +1,156 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Srirang Ranjalkar</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title> Srirangr.in </title>
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Yrsa" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="home">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron text-center">
+            <h1 class="name">Srirang Ranjalkar</h1>
+            <p class="caption">Technology. &nbsp; Business. &nbsp; Entrepreneurship.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-8">
+                    <article id="about">
+                        <h2 class="article-heading">About</h2>
+                        <section>
+                            <p class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </section>
+                    </article>
+                    <article id="work">
+                        <h2 class="article-heading">Work</h2>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="card-content"></div>
+                                  <div class="card-hover">
+                                    <div class="card-hover-header">
+                                      a title
+                                    </div>
+                                    <div class="card-hover-main">
+                                      <button class="btn">Button</button>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-content"></div>
+                                  <div class="card-hover">
+                                    <div class="card-hover-header">
+                                      a title
+                                    </div>
+                                    <div class="card-hover-main">
+                                      <button class="btn">Button</button>
+                                    </div>
+                                  </div>
+                            </div>
 
-<h1> Hello World </h1>
-<h2> Setting up a new website </h2>
+                          
+                        </div>
+                        <!-- <div class="cards">
+                            <div class="card card-1">
+                                <div id="layer">
+                                    <button id="add">Add</button>
+                                    <button id="compare">Compare</button>
+                                </div>
+                            </div>
+                            <div class="card card-2">
+                                <div id="layer">
+                                    <button id="add">Add</button>
+                                    <button id="compare">Compare</button>
+                                </div>
+                            </div>
+                            <div class="card card-3">
+                                <div id="layer">
+                                    <button id="add">Add</button>
+                                    <button id="compare">Compare</button>
+                                </div>
+                            </div>
+                        </div> -->
+                    </article>
+                    <article id="contact">
+                        <h2 class="article-heading">Contact Me</h2>
+                        <section>
+                            <p class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </section>
+                    </article>
+                </div>
+                <div class="col-sm-2">
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid text-center">
+            <a class="footer-glyphicon" href="#home" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p style="color:#eee">©2017 Srirang Ranjalkar. All rights reserved </p>
+        </footer>
+        <script>
+            $(document).ready(function(){
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
 
-</body>
+                        // Store hash
+                        var hash = this.hash;
 
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top - 30
+                        }, 900, function(){
+               
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+              
+                $(window).scroll(function() {
+                    $(".slideanim").each(function(){
+                        var pos = $(this).offset().top;
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
 </html>
-
-
